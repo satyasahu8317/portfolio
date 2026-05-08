@@ -181,10 +181,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const typingEl = document.getElementById('typing-text');
   if (typingEl) {
     const phrases = [
-      'Learner • Developer • Explorer 🌱',
-      'Machine Learning Developer',
-      'Electronics Enthusiast',
-      'Full-Stack Builder'
+      'ML Developer',
+      'Full-Stack Developer',
+      'Electronics Engineer',
+      'IoT Builder'
     ];
     let phraseIdx = 0, charIdx = 0, deleting = false;
 
