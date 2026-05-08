@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
       this.size = Math.random() * 1.8 + 0.5;
       this.speedX = (Math.random() - 0.5) * 0.3;
       this.speedY = (Math.random() - 0.5) * 0.3;
-      this.opacity = Math.random() * 0.4 + 0.1;
+      this.opacity = Math.random() * 0.2 + 0.1;
       this.pulse = Math.random() * Math.PI * 2;
     }
     update() {
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Create particles (fewer on mobile)
-  const particleCount = window.innerWidth < 768 ? 30 : 60;
+  const particleCount = window.innerWidth < 768 ? 18 : 36;
   for (let i = 0; i < particleCount; i++) {
     particles.push(new Particle());
   }
