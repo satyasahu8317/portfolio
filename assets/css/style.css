@@ -292,6 +292,24 @@ section { position: relative; z-index: 1; padding: 100px 24px; }
   padding: 32px; transition: all var(--transition); position: relative; overflow: hidden;
   display: flex; flex-direction: column;
 }
+.project-preview {
+  width: calc(100% + 64px);
+  margin: -32px -32px 24px -32px;
+  height: 180px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.5rem; font-weight: 800; color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 1px; border-bottom: 1px solid var(--border-glass);
+  position: relative; z-index: 1;
+}
+.featured-badge {
+  position: absolute; top: 16px; right: 16px; z-index: 2;
+  background: rgba(16, 185, 129, 0.15); color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.3); padding: 6px 12px;
+  border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 700;
+  display: flex; align-items: center; gap: 6px;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.1); backdrop-filter: blur(4px);
+}
+.featured-badge i { font-size: 0.8rem; }
 .project-card::after {
   content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%;
   background: conic-gradient(from 0deg, transparent 0%, rgba(99,102,241,0.08) 25%, transparent 50%);
